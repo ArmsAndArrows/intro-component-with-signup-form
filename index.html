@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="title">
+        <h1 class="title__heading">Learn to code by watching others</h1>
+        <p class="title__paragraph">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
+      <div class="cta">
+        <button class="cta__btn">
+          <span class="cta__offer">Try it free 7 days</span> then $20/mo.
+          thereafter
+        </button>
+      </div>
+
+      <form class="form" action=".">
+        <div>
+          <div class="form__field">
+            <input
+              id="fName"
+              class="form__input"
+              type="text"
+              placeholder="First Name"
+            />
+            <img
+              src="images/icon-error.svg"
+              alt="error img"
+              class="form__error"
+            />
+          </div>
+          <p class="form__error-message">First Name cannot be empty</p>
+        </div>
+        <div>
+          <div class="form__field">
+            <input
+              id="lName"
+              class="form__input"
+              type="text"
+              placeholder="Last Name"
+            />
+            <img
+              src="images/icon-error.svg"
+              alt="error img"
+              class="form__error"
+            />
+          </div>
+          <p class="form__error-message">Last Name cannot be empty</p>
+        </div>
+        <div>
+          <div class="form__field">
+            <input
+              id="email"
+              class="form__input"
+              type="email"
+              placeholder="Email Address"
+            />
+            <img
+              src="images/icon-error.svg"
+              alt="error img"
+              class="form__error"
+            />
+          </div>
+          <p class="form__error-message">Looks like this is not an email</p>
+        </div>
+        <div>
+          <div class="form__field">
+            <input
+              id="password"
+              class="form__input"
+              type="password"
+              placeholder="Password"
+            />
+            <img
+              src="images/icon-error.svg"
+              alt="error img"
+              class="form__error"
+            />
+          </div>
+          <p class="form__error-message">Password cannot be empty</p>
+        </div>
+        <button id="submit" class="form__btn">Claim your free trial</button>
+        <p class="form__terms">
+          By clicking the button, you are agreeing to our
+          <a class="form__link" href=".">Terms and Services</a>
+        </p>
+      </form>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
